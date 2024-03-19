@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/introTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_above="@+id/inputEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="172dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="How Many Bits?"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/calculateButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="-142dp"
+        android:layout_marginEnd="98dp"
+        android:autofillHints=""
+        android:hint="Enter size (e.g., 1 KB)"
+        android:inputType="text"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        style="@android:style/Widget.Material.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_above="@+id/resultTextView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="77dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="245dp"
+        android:fontFamily="@font/allerta"
+        android:text="BITS"
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp" />
+
+</RelativeLayout>
